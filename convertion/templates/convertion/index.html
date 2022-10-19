@@ -1,0 +1,281 @@
+{% extends 'convertion/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<header>
+
+</header>
+<body>
+<br>
+
+<div class="row">
+    <div class="container col-md-12">
+        <div class="card bg-dark">
+            <div class="card card-body">
+
+                <form action="" method="POST" autocomplete="off">
+
+                {% csrf_token %}
+
+                <h3>Informations</h3>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        {{ form.centre_soins | as_crispy_field }}
+                    </div>
+                    <div class="col-md-4">
+                        {{form.medecin | as_crispy_field}}
+                    </div>
+                    <div class="col-md-4">
+                        {{ form.patient | as_crispy_field }}
+                    </div>
+                </div>
+
+                <h3>Produits</h3>
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament1 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med1 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min1 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max1 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite1 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte1 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament2 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med2 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min2 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max2 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite2 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte2 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament3 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med3 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min3 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max3 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite3 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte3 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament4 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med4 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min4 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max4 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite4 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte4 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament5 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med5 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min5 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max5 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite5 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte5 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament6 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med6 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min6 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max6 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite6 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte6 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament7 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med7 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min7 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max7 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite7 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte7 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament8 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med8 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min8 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max8 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite8 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte8 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament9 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med9 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min9 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max9 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite9 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte9 | as_crispy_field}}
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        {{ form.medicament10 | as_crispy_field }}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.forme_med10 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_min10 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.prise_max10 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.unite10 | as_crispy_field}}
+                    </div>
+                    <div class="col-md-2">
+                        {{form.qte10 | as_crispy_field}}
+                    </div>
+                </div>
+                
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+</body>
+</html>
+
+{% endblock content %}
